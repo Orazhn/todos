@@ -24,7 +24,7 @@ const Favorites = () :JSX.Element => {
             todos.filter(todo => todo.isFavorite)
                 .map(todo => 
                     <li key={todo.id}>
-                        <Card text = {todo.text} id = {todo.id} fav = {todo.isFavorite}/>
+                        <Card text = {todo.text} id = {todo.id} isFavorite = {todo.isFavorite}/>
                     </li>)
             
         }

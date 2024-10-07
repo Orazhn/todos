@@ -1,8 +1,7 @@
-interface IEmpty {
-  text: string | null
+interface IProps {
+  text?: string
 }
-
-const EmptyTodo = ({text}: IEmpty) => {
+const EmptyTodo = ({text}: IProps) => {
 
   return (
     <div >

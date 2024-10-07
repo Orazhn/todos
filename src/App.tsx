@@ -12,7 +12,7 @@ export default function App() {
           <h1 className="text-3xl text-blue-800 font-myFont">todos app</h1>
           <div className="flex w-3/5 justify-between gap-2 md:flex-row sm:flex-col ">
             <input 
-              className="w-4/5 py-3 px-4 text-xl rounded-md drop-shadow-2xl sm:w-full " 
+              className="w-4/5 py-3 px-4 text-xl rounded-md drop-shadow-2xl sm:w-full  border-2 border-gray-500" 
               type="text" value={value} 
               onChange={(e) => setValue(e.target.value)}
               onKeyDown={(e) => {e.key === "Enter" && sendingData(value) }}

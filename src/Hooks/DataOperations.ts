@@ -57,7 +57,37 @@ const handleFav = (id:string, text: string, fav:boolean) => {
     console.log(error);
   })}
 
+  const sendingLocal = (todo: ITodo) => {
+    localStorage.setItem('history', JSON.stringify(todo))
+  }
+
+
+  const gettingLocal = () => {
+    const item = localStorage.getItem('history')
+    if (item){
+      const parsedData = JSON.parse(item);
+      return parsedData
+    }else {
+      return "You didn't complete any todo"
+    }
+  }
+
+  const returnLocal = (todo: ITodo) => {
+    localStorage.removeItem('history')
+    axios.post('http://localhost:3000/todos', {
+      text: todo.text,
+      id:todo.id,
+      isFavorite: todo.isFavorite
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+    window.location.reload()
+  }
     
     
 
-export {sendingData, gettingData, doneButtonHandler, handleFav}
+export {sendingData, gettingData, doneButtonHandler, handleFav, sendingLocal, gettingLocal, returnLocal}
