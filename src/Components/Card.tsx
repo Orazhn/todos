@@ -1,6 +1,6 @@
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { useState } from "react";
-import { doneButtonHandler, handleFav, sendingLocal } from "../Hooks/DataOperations";
+import { doneButtonHandler, handleFav, sendingLocal } from "../DataFunctions/DataOperations";
 
 
 interface ITodo {

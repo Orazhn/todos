@@ -1,6 +1,6 @@
 import { useState} from 'react'
 import Cards from './Components/Cards'
-import { sendingData} from "./Hooks/DataOperations"
+import { sendingData} from "./DataFunctions/DataOperations"
 
 
 export default function App() {

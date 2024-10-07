@@ -1,6 +1,6 @@
 import Card from "./Card"
 import { useEffect, useState } from "react"
-import { gettingData } from "../Hooks/DataOperations"
+import { gettingData } from "../DataFunctions/DataOperations"
 import EmptyTodo from "./EmptyTodo"
 
 interface ITodo {

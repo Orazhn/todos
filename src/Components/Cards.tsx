@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react"
 import { MdHistory } from "react-icons/md";
-import {  gettingData, gettingLocal} from "../Hooks/DataOperations"
+import {  gettingData, gettingLocal} from "../DataFunctions/DataOperations"
 import Card from "./Card";
 import EmptyTodo from "./EmptyTodo";
 import Favorites from "./Favorites";
