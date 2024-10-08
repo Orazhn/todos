@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const sendingData = (value:string) => {
-  if (value.length){ 
+  if (value.trim().length){ 
     axios.post('http://localhost:3000/todos', {
       text: value,
       isFavorite: false

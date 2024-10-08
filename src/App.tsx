@@ -26,10 +26,6 @@ export default function App() {
           
           </div>
               <Cards /> 
-         
-              
-          
-           
           </div>
     )
 }

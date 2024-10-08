@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { MdHistory } from "react-icons/md";
 import {  gettingData, gettingLocal} from "../DataFunctions/DataOperations"
 import Card from "./Card";
@@ -12,7 +12,7 @@ interface ITodo {
   isFavorite: boolean
 }
 
-const Cards: FC = () =>  {
+const Cards = () =>  {
   const [todos, setTodos] = useState<ITodo[]>([])
   const [tab, setTab] = useState<string>('All')
   const [historyShown, setHistoryShown] = useState<boolean>(false)
